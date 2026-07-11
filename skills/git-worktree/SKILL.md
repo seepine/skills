@@ -1,6 +1,8 @@
 ---
 name: git-worktree
 description: Git Worktree 全流程管理。包含创建、合并、清理三个流程。适用于需要并行开发多个特性或在独立工作区处理任务的场景。
+metadata: 
+  version: 0.1.0
 ---
 
 # Git Worktree 工作流

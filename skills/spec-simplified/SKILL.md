@@ -1,6 +1,8 @@
 ---
 name: spec-simplified
 description: spec 规范流程简化版。判断任务是否分三步：编写 spec.md 明确需求、编写 plan.md 拆解计划、编写 task 文档执行落地。每步完成后停下向用户确认。适用于大功能点或重构。
+metadata: 
+  version: 0.1.0
 ---
 
 # Simple Spec

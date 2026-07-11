@@ -48,6 +48,7 @@ npx -y skills add https://github.com/seepine/skills -a claude-code -a codex -a o
 | ------------------- | ----------------------------------------------------------------------------------------------------- |
 | `git-guide`         | 基于 git 开发指南，阐述如何使用 Fork 和 PR 通过 git 协同开发。                                        |
 | `git-worktree`      | Git Worktree 全流程管理，包含创建、合并、清理三个流程，适用于并行开发多个特性。                       |
+| `git-commit-generate` | 根据最近提交与项目规范，给暂存代码生成中英文双版本 git 提交信息。                                    |
 | `gh-cli`            | GitHub CLI 使用参考，用于通过命令行管理 GitHub 仓库、Issue、PR 和 Actions 等。                        |
 | `gitea-cli`         | Gitea CLI 使用参考，用于通过命令行管理 Gitea 仓库、Issue、PR、评审和 Actions 等。                     |
 | `gitea-workflow`    | Gitea 工单处理工作流，用于认领工单、创建分支、提交 PR 和根据评审意见修订。                            |

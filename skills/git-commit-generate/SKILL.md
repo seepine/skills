@@ -2,20 +2,38 @@
 name: git-commit-generate
 description: generate git commit message
 metadata: 
-  version: 0.1.0
+  version: 0.1.1
 ---
 
 给暂存的代码生成中英文双版本 git 提交信息
 
-## 生成逻辑
+## 第一步：查看暂存文件
 
-结合最近五次的提交信息，再根据是否存在提交规范进行判断生成
+### 1.1 先查看暂存的文件
 
-### 存在提交规范
+```sh
+git --no-pager diff --cached --stat
+```
+
+### 1.2 再查看每个文件的变动
+
+```sh
+git --no-pager diff --cached <filePath>
+```
+
+## 第二步：生成逻辑
+
+结合最近三次的提交信息，再根据是否存在提交规范进行判断生成
+
+```sh
+git --no-pager log --oneline -3
+```
+
+### 2.1 存在提交规范
 
 若项目中存在提交规范，例如 `commitlint.config.js`, `.versionrc` 等文件，则按照其规范
 
-### 不存在提交规范
+### 2.2 不存在提交规范
 
 优先参考 Conventional Commits 规范
 
@@ -40,6 +58,7 @@ metadata:
 
 ## 注意
 
-- 提交信息不要包含/ ` 等特殊符号
+- 提交信息不要包含 / ` 等特殊符号
 - 除非项目提交规范要求，否则提交信息不要包含 emoji 图标
-- 只需要简单描述依据，并给出生成结果
+
+$ARGUMENTS

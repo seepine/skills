@@ -14,7 +14,7 @@
 安装全部技能
 
 ```
-npx -y skills add https://github.com/seepine/skills
+npx -y skills add https://github.com/seepine/skills -g -y
 ```
 
 ### 2. 指定安装
@@ -22,7 +22,7 @@ npx -y skills add https://github.com/seepine/skills
 只安装某个技能
 
 ```
-npx -y skills add https://github.com/seepine/skills --skill git-guide
+npx -y skills add https://github.com/seepine/skills --skill git-guide -g -y
 ```
 
 ### 3. 指定 Agent
@@ -30,7 +30,7 @@ npx -y skills add https://github.com/seepine/skills --skill git-guide
 安装全部技能到指定的 Agent
 
 ```
-npx -y skills add https://github.com/seepine/skills -a claude-code -a codex -a opencode -g
+npx -y skills add https://github.com/seepine/skills -a claude-code -a codex -a opencode -g -y
 ```
 
 ## Skills

@@ -11,25 +11,25 @@
 
 ### 1. 快速安装
 
-安装全部技能
+安装全部技能到 `~/.agents/skills`
 
-```
-npx -y skills add https://github.com/seepine/skills -g -y
+```bash
+npx -y skills add https://github.com/seepine/skills -a universal -g -y
 ```
 
 ### 2. 指定安装
 
-只安装某个技能
+只安装某个技能到 `~/.agents/skills`
 
-```
-npx -y skills add https://github.com/seepine/skills --skill git-guide -g -y
+```bash
+npx -y skills add https://github.com/seepine/skills --skill git-guide -a universal -g
 ```
 
 ### 3. 指定 Agent
 
 安装全部技能到指定的 Agent
 
-```
+```bash
 npx -y skills add https://github.com/seepine/skills -a claude-code -a codex -a opencode -g -y
 ```
 

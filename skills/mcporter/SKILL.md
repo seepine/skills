@@ -2,7 +2,7 @@
 name: mcporter
 description: "List, configure, authenticate, call, and inspect MCP servers/tools with mcporter over HTTP or stdio."
 metadata:
-  version: 0.1.0
+  version: 0.1.1
 ---
 
 # mcporter
@@ -40,5 +40,6 @@ Codegen
 
 Notes
 
+- If the `mcporter` command is not found, install it with `bun add -g mcporter` or `npm install -g mcporter`.
 - Config default: `./config/mcporter.json` (override with `--config`).
 - Prefer `--output json` for machine-readable results.

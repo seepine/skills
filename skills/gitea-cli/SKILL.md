@@ -2,8 +2,9 @@
 name: gitea-cli
 description: Gitea CLI (giteacli) reference for working with Gitea from the command line. Use when managing Gitea repositories, issues, pull requests, labels, comments, reviewers, reviews, Actions, authentication, or CLI configuration.
 metadata: 
-  version: 0.1.0
-  gitea-cli-version: ">=0.1.8"
+  version: 0.1.1
+  giteacli: https://github.com/seepine/giteacli
+  giteacli-version: ">=0.1.9"
 ---
 
 # gitea cli
@@ -13,6 +14,9 @@ A CLI tool for interacting with Gitea instances. Manage repositories, issues, pu
 ## Installation
 
 ```bash
+# Using bun
+bun add -g @seepine/giteacli
+
 # Using npm
 npm install -g @seepine/giteacli
 
@@ -168,10 +172,10 @@ giteacli action list --repo <owner/repo>
 giteacli action list --repo <owner/repo> --status success --branch main --event push
 
 # List jobs in an action run
-giteacli action job list --repo <owner/repo> --index <runId>
+giteacli action job list --repo <owner/repo> --run-id <runId>
 
-# View an action job
-giteacli action job view --repo <owner/repo> --index <jobId>
+# View logs of an action job, the output is the full log of the job (all steps)
+giteacli action job logs --repo <owner/repo> --job-id <jobId>
 ```
 
 ### Configuration
